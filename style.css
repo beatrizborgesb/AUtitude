@@ -1,0 +1,73 @@
+
+body {
+    background-image: url("redhot.jpeg");
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    margin-left: 150px;
+    margin-right: 180px;
+    margin-top: 480px;
+    background-size: contain;
+    
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+#menu li{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin: center;
+    width: 100%;
+    color: rgb(18, 19, 18);
+    
+}
+#menu li a{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin: center;
+    width: 100%;
+    color: rgb(18, 19, 18);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+ h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
