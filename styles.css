@@ -5,11 +5,60 @@
 }
 
 body {
-  background: #279e56;
+  background: #d0ded6;
   font-family: "Lato", sans-serif;
   min-height: 100vh;
   margin: 0;
 }
+
+/* .container {
+  width: 100%;
+  max-width: 1140px margin 0 auto;
+  padding: 100px 0;
+}
+
+.container .title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.container .p {
+  line-height: 180%;
+  margin-bottom: 15px;
+}
+
+.scrollTop {
+  outline: none;
+  border: 0;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  box-shadow: #96c2a9;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+}
+
+.scrollTop :active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrollTop img {
+  width: 100%;
+  transform: rotate(180deg);
+} */
 
 #menu li a {
   font-family: "Poppins", sans-serif;
@@ -67,7 +116,7 @@ select:focus {
 }
 
 .text-box {
-  width: 70%;
+  width: 50%;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -84,8 +133,9 @@ select:focus {
 }
 
 select {
-  background-color: #d8f6e7;
-  border: 0;
+  background-color: #96c2a9;
+  border: 100;
+  border-color: #11ae68;
   color: #1a2232;
   font-size: 12px;
   height: 30px;
@@ -159,17 +209,17 @@ main {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
   margin-top: 20px;
 }
 
 nav a {
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   color: black;
 
-  transition: color 0.2s;
+  transition: color 0.3s;
 }
 
 nav a:hover {
@@ -177,7 +227,7 @@ nav a:hover {
 }
 
 nav a + a {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 @media (max-width: 1100px) {
