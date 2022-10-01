@@ -4,11 +4,37 @@
   box-sizing: border-box;
 }
 
+:root {
+  --body-bg: #dfebe4;
+  --body-color: rgb(6, 6, 6);
+  text-align: right;
+}
+
+.dark-mode:root {
+  --body-bg: #0a0909;
+  --body-color: #fafafa;
+  text-align: right;
+}
+
+.dark-mode a {
+  color: #ffffff;
+}
+
+.dark-mode h1 {
+  color: #ffffff;
+}
+
+.dark-mode h3 {
+  color: #ffffff;
+}
+
 body {
-  background: #d0ded6;
+  background: #d5dfda;
   font-family: "Lato", sans-serif;
   min-height: 100vh;
   margin: 0;
+  background-color: var(--body-bg);
+  color: var(--body-color);
 }
 
 /* .container {
@@ -47,7 +73,7 @@ body {
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
 .scrollTop :active {
@@ -166,9 +192,11 @@ select {
 }
 
 main {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-gap: 5px;
 }
 
 .expression-box {
@@ -202,14 +230,14 @@ main {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0;
-  padding: 10px;
+  /* padding: 10px; */
   text-align: center;
-  height: 100%;
+  /* height: 100%; */
 }
 
 nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   margin-top: 20px;
 }
@@ -228,6 +256,24 @@ nav a:hover {
 
 nav a + a {
   margin-left: 25px;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+}
+
+button#upButton {
+  width: 80px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+  background: transparent;
+}
+
+button#upButton img {
+  width: 100%;
 }
 
 @media (max-width: 1100px) {
